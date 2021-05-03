@@ -1,7 +1,7 @@
 /*
 
 bu program lagged fibonacci methodunu kullanarak
-mouse click saat ve pozisyonuyla elde edilmiþ seedleri kullanarak
+mouse click saat ve pozisyonuyla elde edilmiÃ¾ seedleri kullanarak
 random numberlar generate eder
 
 */
@@ -45,7 +45,7 @@ using namespace std;
 	void seedArray()
 	{
 		// Read from the seed text file
-		ifstream mySeedsFile("C:/Users/aleyn/Desktop/Seeds.txt");
+		ifstream mySeedsFile("Seeds.txt");
 		int i = 0;
 		string myText;
 
@@ -99,11 +99,11 @@ using namespace std;
 		ofstream mySeedsFile;
 
 		//first clean the file content
-		mySeedsFile.open("C:/Users/aleyn/Desktop/Seeds.txt");
+		mySeedsFile.open("Seeds.txt");
 		mySeedsFile.close();
 
 		//open it again this time put the new seed array into the file
-		mySeedsFile.open("C:/Users/aleyn/Desktop/Seeds.txt");
+		mySeedsFile.open("Seeds.txt");
 
 		for (size_t i = 0; i < 7; i++)
 		{
